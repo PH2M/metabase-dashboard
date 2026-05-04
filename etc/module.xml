@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* Copyright © PH2M SARL. All rights reserved.
+* See COPYING.txt for license details.
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Ph2m_MetabaseDashboard">
+        <sequence>
+            <module name="Magento_Backend"/>
+            <module name="Magento_Config"/>
+        </sequence>
+    </module>
+</config>

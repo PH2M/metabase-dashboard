@@ -1,0 +1,19 @@
+{
+    "name": "ph2m/magento2-metabase-dashboard",
+    "description": "Replaces the Magento 2 admin dashboard with a Metabase embedded dashboard via signed JWT iframe",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": ">=103.0",
+        "magento/module-backend": ">=102.0",
+        "magento/module-config": ">=101.0"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Ph2m\\MetabaseDashboard\\": ""
+        }
+    }
+}

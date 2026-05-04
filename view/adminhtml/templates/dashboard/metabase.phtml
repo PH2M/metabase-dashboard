@@ -1,0 +1,33 @@
+<?php
+/**
+ * Copyright © PH2M SARL. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * @var \Ph2m\MetabaseDashboard\Block\Adminhtml\Dashboard $block
+ */
+?>
+<div class="metabase-dashboard-wrapper">
+    <style>
+        /* Hide all default dashboard siblings when Metabase is active */
+        .metabase-dashboard-wrapper ~ * {
+            display: none !important;
+        }
+        .metabase-dashboard-wrapper {
+            width: 100%;
+            height: calc(100vh - 140px);
+            min-height: 600px;
+        }
+        .metabase-dashboard-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+    <iframe
+        src="<?= $block->escapeUrl($block->getIframeUrl()) ?>"
+        frameborder="0"
+        allowtransparency="true"
+        allowfullscreen="true">
+    </iframe>
+</div>
